@@ -140,7 +140,7 @@ nav .button-flex {
   text-transform: capitalize;
 }
 
-form .search {
+form > #search {
   color: var(--dark-color);
   background-color: var(--light-backgd);
   padding: 0.6rem;
@@ -152,7 +152,7 @@ form .search {
   cursor: pointer;
 }
 
-form .search:hover {
+form #search:hover {
   color: var(--light-backgd);
   background-color: var(--dark-color);
 }
