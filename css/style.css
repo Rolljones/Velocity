@@ -431,6 +431,7 @@ main .sport-flex {
   justify-content: space-between;
   gap: 3rem;
   padding: 6rem 0;
+  border-bottom: 2px solid var(--light-backgd);
   
 }
 
@@ -766,6 +767,8 @@ main .discover-flex {
 
 .top .run-text > h3 {
   font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--light-nav);
 }
 
 main .facility-box {
@@ -1062,10 +1065,151 @@ main .facility-box {
   margin-top: auto;
 }
 
-.game-grid h3 {
+.game-grid .elevate-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.elevate-flex .arrow-flex {
+  display: flex;
+  gap:1rem;
+}
+
+.arrow-flex i {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.arrow-flex i:hover {
+  color:var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.game-grid .elevate-flex > h3 {
   font-weight: 400;
-  color: var(--dark-color);
   align-self: flex-end;
   width: 42rem;
-  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+}
+
+main .empower {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+main .empower > h1 {
+   font-family: "Michroma", sans-serif;
+   width: 55rem;
+}
+
+.empower .experience {
+  display:flex;
+  justify-content: space-between;
+}
+
+.experience .exp-box {
+  background-size: cover;
+  background-image: url(../Images/young.webp);
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap:4rem;
+}
+
+.exp-box .first-part {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.exp-box .first-part > #medal {
+  color: var(--light-color);
+  padding: 0.6rem;
+  border: 1px solid var(--light-color);
+  border-radius: 50%;
+  font-size: var(--fs-base);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: fit-content;
+}
+
+.exp-box .first-part > .image-place {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-color);
+  width: fit-content;
+  padding: 0.4rem 0.7rem;
+  border-radius: 2rem;
+}
+
+.image-place img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.image-place i {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: var(--fs-base);
+  margin-left: 0.5rem;
+  transition: all 0.5s ease;
+  cursor:pointer;
+}
+
+.image-place i:hover {
+  color:var(--dark-color);
+  background-color: var(--light-backgd);
+}
+
+.exp-box .second-part {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.exp-box .second-part > h1 {
+  color:var(--light-color);
+  font-weight: 500;
+}
+
+.exp-box .second-part > .coach {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coach h3 {
+  color:var(--light-color);
+  font-weight: 400;
+  width:50%;
+  line-height: 2rem;
+}
+
+.coach i {
+  font-size: 2rem;
+  background-color: var(--light-color);
+  color:var(--dark-color);
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.coach i:hover {
+  background-color: var(--dark-color);
+  color:var(--light-color)
 }
