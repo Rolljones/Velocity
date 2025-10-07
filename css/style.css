@@ -680,7 +680,7 @@ main .discover-flex {
 }
 
 .info .info-text > h2 {
-  font-weight: 500;
+  font-weight: 400;
   color:var(--light-color);
   line-height: 2.5rem;
 }
@@ -765,14 +765,16 @@ main .discover-flex {
 }
 
 .top .run-text > h3 {
-  font-weight: 500;
-  color: var(--light-nav)
+  font-weight: 400;
 }
 
 main .facility-box {
   padding: 5rem 2rem;
   background-color: var(--light-backgd);
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
 }
 
 .facility-box .explore {
@@ -884,4 +886,186 @@ main .facility-box {
   padding: 0.6rem;
   border-radius: 50%;
   font-size: var(--fs-base);
+}
+
+.facility-box .game-grid {
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.facility-box .game-grid > .boxes {
+  display: flex;
+  gap:0 0.5rem;
+  height: 25rem;
+  
+}
+
+.boxes .zone {
+  background-image: url(../Images/zone.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.zone span {
+  border: 2px solid var(--light-color);
+  background: transparent;
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--light-color);
+  align-self: flex-end;
+}
+
+.zone h2 {
+  color:var(--light-color);
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-top: auto;
+}
+
+.boxes .pitch {
+  background-image: url(../Images/pitch.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pitch span {
+  border: 2px solid var(--light-color);
+  background: transparent;
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--light-color);
+  align-self: flex-end;
+}
+
+.pitch .glass-box {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 1rem;
+
+}
+
+.glass-box .play {
+  display: flex;
+  justify-content: space-between;
+}
+
+.play .glass-play {
+  border: 2px solid var(--light-color);
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--light-color);
+}
+
+.play i {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: var(--fs-base);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.play i:hover {
+  color:var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.glass-box h2 {
+  color:var(--light-color);
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+.boxes .track {
+  background-image: url(../Images/track.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.track span {
+  border: 2px solid var(--light-color);
+  background: transparent;
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--light-color);
+  align-self: flex-end;
+}
+
+.track h2 {
+  color:var(--light-color);
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-top: auto;
+}
+
+.boxes .lawn {
+  background-image: url(../Images/lawn.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.lawn span {
+  border: 2px solid var(--light-color);
+  background: transparent;
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--light-color);
+  align-self: flex-end;
+}
+
+.lawn h2 {
+  color:var(--light-color);
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-top: auto;
+}
+
+.game-grid h3 {
+  font-weight: 400;
+  color: var(--dark-color);
+  align-self: flex-end;
+  width: 42rem;
+  margin-top: 3rem;
 }
