@@ -65,7 +65,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem 3rem;
 }
 
 header nav {
@@ -123,8 +123,7 @@ nav .button-flex {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: var(--light-backgd);
-  padding: 0.8rem;
-  padding-left: 1.2rem;
+  padding: 0.8rem 3rem 0.8rem 1.2rem;
   width: 10rem;
   border: none;
   outline: none;
@@ -813,16 +812,15 @@ main .facility-box {
 }
 
 .right-exp form {
-    position: relative;
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 .right-exp form > input {
-    background-color: var(--light-color);
+  background-color: var(--light-color);
   color: var(--light-nav);
-  padding: 0.8rem;
-  padding-left: 1.2rem;
+  padding: 0.8rem 3rem 0.8rem 1.2rem;
   width: 25rem;
   border: none;
   outline: none;
@@ -1115,7 +1113,7 @@ main .empower > h1 {
 
 .empower .experience {
   display:flex;
-  justify-content: space-between;
+  gap: 3rem;
 }
 
 .experience .exp-box {
@@ -1125,6 +1123,7 @@ main .empower > h1 {
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
+  width:50%;
   gap:4rem;
 }
 
@@ -1189,7 +1188,9 @@ main .empower > h1 {
 
 .exp-box .second-part > .coach {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  
 }
 
 .coach h3 {
@@ -1211,5 +1212,378 @@ main .empower > h1 {
 
 .coach i:hover {
   background-color: var(--dark-color);
+  color:var(--light-color);
+}
+
+.experience .special {
+  display:flex;
+  flex-direction: column;
+  gap:4rem;
+  width:40%;
+}
+
+.special .hand-flex {
+  display: flex;
+  gap:1rem;
+}
+
+
+.hand-flex .first-hand {
+  width: 50%;
+  height:10rem;
+  background-image: url(../Images/bench.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.hand-flex .alter {
+  background-image: url(../Images/active.webp);
+  background-position: center;
+}
+
+.first-hand .add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add i {
+  color: var(--light-color);
+  padding: 0.6rem;
+  border: 1px solid var(--light-color);
+  border-radius: 50%;
+  font-size: var(--fs-base);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.add i:hover {
+  background-color: var(--dark-color);
+  color: var(--light-backgd);
+  border: none;
+}
+
+.add img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.first-hand h3 {
+  color:var(--light-color);
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.hand-flex .second-hand {
+  width: 50%;
+  height:10rem;
+  background-color: rgb(15, 74, 74);
+}
+
+.special .train {
+  color:var(--light-nav);
+  font-weight: 400;
+}
+
+main .price-box {
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  padding:5rem 0;
+}
+
+.price-box .price-head {
+  display:flex;
+  align-items: center;
+}
+
+.price-head .price-icon {
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  align-self: left;
+}
+
+.price-icon i {
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--dark-color);
+  color:var(--light-color);
+  width: fit-content;
+}
+
+.price-icon span {
+  background: var(--light-backgd);
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--dark-color);
+}
+
+.price-head h1 {
+  text-align: center;
+  width: 50rem;
+  margin: 0 auto;
+  font-family: "Michroma", sans-serif;
+}
+
+.price-box .option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.option h3 {
+  font-weight: 400;
+}
+
+.option i {
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--dark-color);
+  color:var(--light-color);
+  width: fit-content;
+  cursor:pointer;
+  transition: all 0.5s ease;
+}
+
+.option i:hover {
+  background-color: var(--light-backgd);
+  color:var(--dark-color);
+}
+
+.price-box .price-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap:0 1rem;
+}
+
+.price-grid .package {
+  background-image: url(../Images/olympic.webp);
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.price-grid .alt {
+  background-image: url(../Images/golf.webp);
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.package .best {
+  display: flex;
+  justify-content: space-between;
+}
+
+.package .best > span {
+  background-color: var(--dark-color);
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--light-color);
+  text-transform: capitalize;
+  height: fit-content;
+}
+
+.package .best > .boost {
+  display: flex;
+  flex-direction: column;
+}
+
+.boost .boost-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boost-image img {
+  width:4rem;
+  border-radius: 50%;
+  border: 1px solid var(--light-color);
+}
+
+.boost p {
+  width: 10rem;
+  color: var(--light-color);
+  line-height: 1.2rem;
+}
+
+.package .season {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.package .season > h1 {
+  line-height: 4rem;
+  font-size: 3.7rem;
+  color:var(--light-color);
+  text-align: center;
+}
+
+.package .season > p {
+  text-align: center;
+  font-size: 1.5rem;
   color:var(--light-color)
+}
+
+.package .price-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-btn a {
+  display: flex;
+  gap:0.5rem;
+  align-items: center;
+  color: var(--light-color);
+  text-decoration: none;
+  background-color: var(--dark-color);
+  padding: 0.7rem  2rem;
+  border-radius: 3rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.price-btn a:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.price-btn a > h1 {
+  font-size: 2.5rem
+}
+
+.price-btn a > p {
+  font-weight: 500;
+}
+
+.package .cost {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.cost span {
+   border: 2px solid var(--light-color);
+  background: transparent;
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--light-color);
+}
+
+.cost .total {
+  color:var(--light-color);
+  font-weight: 500;
+  padding: 0.6rem 2rem;
+  border-top: 2px solid var(--light-color);
+}
+
+.cost i {
+  font-size: 2rem;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 0;
+}
+
+.cost i:hover {
+  background-color: var(--dark-color);
+  color:var(--light-color);
+}
+
+main .team-box {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  padding:5rem 0;
+}
+
+.team-box .team-head {
+  display:flex;
+  align-items: center;
+}
+
+.team-head .team-icon {
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  align-self: left;
+}
+
+.team-icon i {
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--dark-color);
+  color:var(--light-color);
+  width: fit-content;
+}
+
+.team-icon span {
+  background: var(--light-backgd);
+  padding: 0.6rem 0.9rem;
+  border-radius: 2.5rem;
+  width: fit-content;
+  color: var(--dark-color);
+}
+
+.team-head h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Michroma", sans-serif;
+}
+
+.team-box .option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.option h3 {
+  font-weight: 400;
+}
+
+.option i {
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--dark-color);
+  color:var(--light-color);
+  width: fit-content;
+  cursor:pointer;
+  transition: all 0.5s ease;
+}
+
+.option i:hover {
+  background-color: var(--light-backgd);
+  color:var(--dark-color);
 }
