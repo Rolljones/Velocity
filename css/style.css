@@ -1419,7 +1419,7 @@ main .price-box {
 .boost-image img {
   width:4rem;
   border-radius: 50%;
-  border: 1px solid var(--light-color);
+  border: 2px solid var(--light-color);
 }
 
 .boost p {
@@ -1522,7 +1522,7 @@ main .price-box {
 main .team-box {
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap:2rem;
   padding:5rem 0;
 }
 
@@ -1586,4 +1586,144 @@ main .team-box {
 .option i:hover {
   background-color: var(--light-backgd);
   color:var(--dark-color);
+}
+
+.team-box .team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0 1rem;
+}
+
+.team-grid .profile {
+  border-radius: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:7rem;
+}
+
+.team-grid .alex {
+  background-image: url(../Images/team2.webp);
+  background-size: cover;
+}
+
+.team-grid .jenny {
+  background-image: url(../Images/team1.webp);
+  background-size: cover;
+}
+
+.team-grid .fox {
+  background-image: url(../Images/team3.webp);
+  background-size: cover;
+}
+
+.team-grid .jones {
+  background-image: url(../Images/team4.webp);
+  background-size: cover;
+}
+
+.team-grid .com {
+  background-color: var(--dark-color);
+  gap:2rem;
+}
+
+.profile .text-icon {
+  display: flex;
+  gap:0.5rem;
+  align-self: flex-end;
+}
+
+.com .text-icon > i:hover {
+  background-color: var(--light-nav);
+   color: var(--dark-color);
+}
+
+.text-icon i {
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: var(--light-color);
+  color:var(--dark-color);
+  width: fit-content;
+  cursor:pointer;
+  transition: all 0.5s ease;
+}
+
+.text-icon i:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+
+.profile .glass-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  border-radius: 1rem;
+}
+
+.com h3 {
+  color:var(--light-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.com .flex-join {
+  display: flex;
+  justify-content: center;
+}
+
+.com .hello-btn {
+  background:transparent;
+  color: var(--light-color);
+  padding: 0.5rem;
+  border: 2px solid var(--light-color);
+  outline: none;
+  width: 100%;
+  border-radius: 2.5rem;
+  font-size: var(--fs-base);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.com .hello-btn:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.com .hello-btn:hover i {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.com .hello-btn i {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: var(--fs-base);
+}
+
+.glass-box h3 {
+   color:var(--light-color);
+   font-weight: 500;
+}
+
+.glass-box p {
+   color:#f0f0f0d0;
+   margin-block: 0;
 }
