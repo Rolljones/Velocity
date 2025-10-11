@@ -1727,3 +1727,132 @@ main .team-box {
    color:#f0f0f0d0;
    margin-block: 0;
 }
+
+footer {
+  padding: 5rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:5rem;
+  background-color: var(--light-backgd);
+}
+
+footer .foot-grid {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr 1.5fr;
+  gap:3rem;
+  grid-template-rows: 17rem;
+}
+
+
+.foot-grid .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.logo h2 {
+    font-family: "Michroma", sans-serif;
+}
+
+.logo h3 {
+  width: 16rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.foot-grid .information {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+
+}
+
+.information h3 {
+  font-weight: 500;
+}
+
+.information .item {
+  display: flex;
+  flex-direction: column;
+  gap:0.3rem;
+}
+
+.information .item > a {
+  color:var(--dark-color);
+  font-size: var(--fs-base);
+  text-decoration: none;
+}
+
+.foot-grid .program {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.program h3 {
+  font-weight: 500;
+}
+
+.program form {
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+
+form input {
+  padding: 0.5rem;
+  border: none;
+  color: var(--dark-color);
+  border-radius: 2rem;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+form button {
+  background:var(--light-color);
+  color: var(--dark-color);
+  padding: 0.3rem 0.5rem;
+  border: 2px solid var(--light-nav);
+  outline: none;
+  width: 100%;
+  border-radius: 2.5rem;
+  font-size: var(--fs-base);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background: var(--dark-color);
+  color:var(--light-color)
+}
+
+form button > i {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+   padding: 0.6rem;
+  border-radius: 50%;
+  font-size: var(--fs-base);
+}
+
+form button:hover > i {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+footer .last-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
